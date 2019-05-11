@@ -4,6 +4,8 @@
         <title>Web - html</title>
         <meta charset="utf-8">
         <link rel="stylesheet" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+        <script src="color.js"></script>
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-139771920-1"></script>
         <script>
         window.dataLayer = window.dataLayer || [];
@@ -14,6 +16,9 @@
     </head>
     <body>
         <h1><a href="index.html">WEB</a></h1>
+        <input type="button" value="night" onclick="
+        night_day_handler(this);
+        ">
         <div id="grid">
             <ol>
                 <li><a href="1.html" style="color:red" id="active">HTML</a></li>

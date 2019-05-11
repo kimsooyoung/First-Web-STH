@@ -3,9 +3,11 @@
     <head>
         <title>Web - html</title>
         <link rel="stylesheet" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+        <script src="color.js"></script>
         <meta charset="utf-8">
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-139771920-1"></script>
-        <script>
+        <script>            
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
@@ -15,24 +17,7 @@
     <body>
         <h1><a href="index.html">WEB</a></h1>
         <input type="button" value="night" onclick="
-        var target = document.querySelector('body');
-        var tag_a = document.querySelectorAll('a');
-        if(this.value === 'night'){            
-            target.style.backgroundColor = 'black';
-            target.style.color = 'white';            
-            for(var i =0;i<tag_a.length;i++){
-                tag_a[i].style.color = 'yellow';
-            }
-            this.value = 'day';
-        }else{
-            target.style.backgroundColor = 'white';
-            target.style.color = 'black';
-            for(var i =0;i<tag_a.length;i++){
-                tag_a[i].style.color = 'black';
-            }
-            this.value = 'night';
-        }
-        document.querySelector('#active').style.color = 'red';
+        night_day_handler(this);
         ">
         <div id="grid">
             <ol>

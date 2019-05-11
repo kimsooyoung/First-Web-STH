@@ -3,6 +3,8 @@
     <head>
         <title>HTML review</title>
         <link rel="stylesheet" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+        <script src="color.js"></script>
         <meta charset="utf-8">
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-139771920-1"></script>
         <script>
@@ -15,17 +17,11 @@
     <body>
         <h1>This is for review</h1>
         <input type="button" value="night" onclick="
-        document.querySelector('body').style.backgroundColor = 'black';
-        document.querySelector('body').style.color = 'white';
-        document.querySelector('a').style.color = 'yellow';
-        ">
-        <input type="button" value="day" onclick="
-        document.querySelector('body').style.backgroundColor = 'white';
-        document.querySelector('body').style.color = 'black';
-        document.querySelector('a').style.color = 'blue';
+        night_day_handler(this);
         ">
         <p>
-            this is my first review and wanted to make a something good and <a href="index.html">creative</a>
+            this is my first review and wanted to make a something 
+            good and <a href="index.html"><span style="color:blue;">creative</span></a>
         </p>
         <p style="margin-top: 50px;">
             <img src="flag.png" width=500>

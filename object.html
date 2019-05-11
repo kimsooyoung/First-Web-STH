@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>object example</title>
+    </head>
+    <body>
+        <script>
+        var my_object = {
+            "my_name" : "swimming",
+            "my_age" : 23,
+            "my_sex" : "male"
+        };
+        document.write(my_object.my_age + "<br>");
+        my_object["my_home"] = "SeongDong";
+        document.write(my_object.my_home + "<br>");
+        </script>
+        <h2>Iteration</h2>
+        <script>
+        for (a in my_object){
+            document.write(a + " : " + my_object[a] + "<br>");
+        }
+        </script>
+        <h2>Property and Method</h2>
+        <script>
+        my_object.show_profile = function (){
+            for(i in this){
+                document.write(i + " : " + my_object[i] + "<br>");
+            }
+        }
+        my_object.show_profile();
+        </script>
+    </body>
+</html>

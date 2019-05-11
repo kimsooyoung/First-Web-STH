@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>
+            Loop example    
+        </title>
+    </head>
+    <body>
+        <h1>Loop</h1>
+        <ul>
+            <script>
+                var list = ['kim', 'soo', 'young'];
+                var i = 0;
+                while(i < list.length){
+                    document.write('<li><a href="www.naver.com' + list[i] + '">'+ list[i] +'</a></li>');
+                    i = i + 1;
+                }
+            </script>
+        </ul>
+        <h2>Function</h2>
+        <script>
+        function add(left, right){
+            document.write(left + right +"<br>");
+            return left + right;
+        }
+        add(2, 3);
+        add(5, 6);
+        
+        </script>
+    </body>
+</html>
