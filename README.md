@@ -1,5 +1,7 @@
 # First Web Something
 
+-----
+
 ![Capture](./Capture.PNG)
 
 ### Made by HTML && CSS && Vanilla JS
